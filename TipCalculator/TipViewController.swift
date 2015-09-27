@@ -31,8 +31,8 @@ class TipViewController: UIViewController, UITextFieldDelegate {
         }
         self.tipIndex = 0
         self.tipSelector.selectedSegmentIndex = 0
-        self.amountInputText.text = nil
-        self.reloadInputViews()
+        self.amountInputText.text = ""
+        self._updateValues()
     }
     
     @IBAction func amountInputTextChanged(sender: AnyObject) {
