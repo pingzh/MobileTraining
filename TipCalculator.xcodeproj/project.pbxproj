@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EC500D981BB70B4C0052D49C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC500D971BB70B4C0052D49C /* AppDelegate.swift */; };
-		EC500D9A1BB70B4C0052D49C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC500D991BB70B4C0052D49C /* ViewController.swift */; };
+		EC500D9A1BB70B4C0052D49C /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC500D991BB70B4C0052D49C /* TipViewController.swift */; };
 		EC500D9D1BB70B4C0052D49C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC500D9B1BB70B4C0052D49C /* Main.storyboard */; };
 		EC500D9F1BB70B4C0052D49C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC500D9E1BB70B4C0052D49C /* Images.xcassets */; };
 		EC500DA21BB70B4C0052D49C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC500DA01BB70B4C0052D49C /* LaunchScreen.xib */; };
 		EC500DAE1BB70B4C0052D49C /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC500DAD1BB70B4C0052D49C /* TipCalculatorTests.swift */; };
+		EC500DB91BB711F50052D49C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC500DB81BB711F50052D49C /* NavigationController.swift */; };
+		EC500DBB1BB744EA0052D49C /* SelectTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC500DBA1BB744EA0052D49C /* SelectTipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		EC500D921BB70B4C0052D49C /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC500D961BB70B4C0052D49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC500D971BB70B4C0052D49C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC500D991BB70B4C0052D49C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC500D991BB70B4C0052D49C /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		EC500D9C1BB70B4C0052D49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC500D9E1BB70B4C0052D49C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC500DA11BB70B4C0052D49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EC500DA71BB70B4C0052D49C /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC500DAC1BB70B4C0052D49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC500DAD1BB70B4C0052D49C /* TipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorTests.swift; sourceTree = "<group>"; };
+		EC500DB81BB711F50052D49C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		EC500DBA1BB744EA0052D49C /* SelectTipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,8 @@
 		EC500D941BB70B4C0052D49C /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				EC500DB71BB70B590052D49C /* Views */,
 				EC500D971BB70B4C0052D49C /* AppDelegate.swift */,
-				EC500D991BB70B4C0052D49C /* ViewController.swift */,
 				EC500D9B1BB70B4C0052D49C /* Main.storyboard */,
 				EC500D9E1BB70B4C0052D49C /* Images.xcassets */,
 				EC500DA01BB70B4C0052D49C /* LaunchScreen.xib */,
@@ -110,6 +114,16 @@
 				EC500DAC1BB70B4C0052D49C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC500DB71BB70B590052D49C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC500D991BB70B4C0052D49C /* TipViewController.swift */,
+				EC500DB81BB711F50052D49C /* NavigationController.swift */,
+				EC500DBA1BB744EA0052D49C /* SelectTipViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC500D9A1BB70B4C0052D49C /* ViewController.swift in Sources */,
+				EC500DBB1BB744EA0052D49C /* SelectTipViewController.swift in Sources */,
+				EC500D9A1BB70B4C0052D49C /* TipViewController.swift in Sources */,
+				EC500DB91BB711F50052D49C /* NavigationController.swift in Sources */,
 				EC500D981BB70B4C0052D49C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
