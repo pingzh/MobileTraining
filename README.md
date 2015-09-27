@@ -21,3 +21,6 @@
 ## Gif walkthrough:
 
 ![alt tag](https://github.com/pingzh/MobileTraining/blob/master/MobileTrainingPreWork__Ping_Zhang.gif)
+
+
+GIF created with LiceCap.
